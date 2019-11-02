@@ -74,4 +74,11 @@ class FoodsController extends Controller
         $food->save();
         return redirect()->route('foods.index');
     }
+
+    public function search(Request $request){
+        $search = $request->get('search');
+        $foods = Food::where('name','LIKE',"%$search%")->get();
+        return view('food.index', compact('foods'));
+
+    }
 }
