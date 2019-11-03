@@ -4,7 +4,12 @@
     <list default="true" id="3cb2054f-8887-489f-abf5-10abfa1a3527" name="Default Changelist" comment="crud food admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FoodsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FoodsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/food/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/food/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/FoodRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/FoodRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/FoodRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/FoodRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/FoodServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/FoodServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Imple/FoodService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Imple/FoodService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/food/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/food/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/food/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/food/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -116,6 +121,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,6 +152,8 @@
       <option name="presentableId" value="Default" />
       <updated>1572713950201</updated>
       <workItem from="1572713956382" duration="7867000" />
+      <workItem from="1572748981256" duration="3745000" />
+      <workItem from="1572753484077" duration="3123000" />
     </task>
     <servers />
   </component>
@@ -157,7 +165,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

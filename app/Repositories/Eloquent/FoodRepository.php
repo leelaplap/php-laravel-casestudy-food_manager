@@ -14,4 +14,20 @@ class FoodRepository implements FoodRepositoryInterface
     {
         return Food::all();
     }
+
+    public function findFoodById($id)
+    {
+    return Food::findOrFail($id);
+    }
+
+    public function save($object)
+    {
+        $object->save();
+    }
+
+
+    public function delete($obj)
+    {
+        $obj->delete();
+    }
 }

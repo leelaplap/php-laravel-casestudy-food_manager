@@ -1,4 +1,5 @@
 @extends('home')
+@section('title','add food')
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
