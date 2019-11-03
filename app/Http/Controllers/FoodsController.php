@@ -63,7 +63,8 @@ class FoodsController extends Controller
         return view('food.edit', compact('food'));
     }
 
-    public function update(Request $request , $id){
+    public function update(Request $request, $id)
+    {
 //        $food = Food::findOrFail($id);
 //        $food->name = $request->name;
 //        $food->desc = $request->desc;
@@ -76,13 +77,13 @@ class FoodsController extends Controller
 //        }
 //
 //        $food->save();
-        $this->foodService->edit($id,$request);
+        $this->foodService->edit($id, $request);
         return redirect()->route('foods.index');
     }
 
-    public function search(Request $request){
-        $search = $request->get('search');
-        $foods = Food::where('name','LIKE',"%$search%")->get();
+    public function search(Request $request)
+    {
+        $foods = $this->foodService->search($request);
         return view('food.index', compact('foods'));
 
     }

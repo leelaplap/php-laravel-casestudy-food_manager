@@ -15,4 +15,7 @@ interface FoodServiceInterface
     public function delete($id);
 
     public function edit($id, $object);
+
+    public function search($object);
+
 }

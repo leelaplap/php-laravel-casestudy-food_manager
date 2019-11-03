@@ -17,7 +17,7 @@ class FoodRepository implements FoodRepositoryInterface
 
     public function findFoodById($id)
     {
-    return Food::findOrFail($id);
+        return Food::findOrFail($id);
     }
 
     public function save($object)
@@ -29,5 +29,10 @@ class FoodRepository implements FoodRepositoryInterface
     public function delete($obj)
     {
         $obj->delete();
+    }
+
+    public function search($object)
+    {
+        return Food::where('name', 'LIKE', "%$object%")->get();
     }
 }

@@ -26,7 +26,7 @@ class FoodService implements FoodServiceInterface
 
     public function findFoodById($id)
     {
-       return $this->foodRepository->findFoodById($id);
+        return $this->foodRepository->findFoodById($id);
     }
 
     public function add($object)
@@ -66,5 +66,11 @@ class FoodService implements FoodServiceInterface
             $food->image = $path;
         }
         return $this->foodRepository->save($food);
+    }
+
+    public function search($object)
+    {
+        $search = $object->get('search');
+        return $this->foodRepository->search($search);
     }
 }

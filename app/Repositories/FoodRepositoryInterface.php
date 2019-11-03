@@ -14,4 +14,6 @@ interface FoodRepositoryInterface
 
     public function delete($obj);
 
+    public function search($object);
+
 }
