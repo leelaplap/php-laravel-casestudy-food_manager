@@ -33,6 +33,6 @@ class FoodRepository implements FoodRepositoryInterface
 
     public function search($object)
     {
-        return Food::where('name', 'LIKE', "%$object%")->get();
+        return Food::where('name', 'LIKE', "%$object%")->orwhere('price', '<', "%$object%")->get();
     }
 }

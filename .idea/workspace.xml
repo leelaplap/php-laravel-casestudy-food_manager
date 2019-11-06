@@ -2,12 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb2054f-8887-489f-abf5-10abfa1a3527" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LangController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleConstant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoppingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Locale.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/RequestFoodValidation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_093710_create_customers_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_06_085648_add_column_role_to_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CustomerTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/GuestTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/vi/message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/customer/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Food.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Food.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FoodsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FoodsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/FoodRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/FoodRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/FoodRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/FoodRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/FoodServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/FoodServiceInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Imple/FoodService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Imple/FoodService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_01_094152_create_foods_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_01_094152_create_foods_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/FoodsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/FoodsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/food/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/food/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/food/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/food/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,11 +140,20 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1T0bF9BjZzYxzu8zNhjOt06pARR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\laravel\php-laravel-casestudy-food_manager\storage\app\public\image" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,7 +185,15 @@
       <updated>1572713950201</updated>
       <workItem from="1572713956382" duration="7867000" />
       <workItem from="1572748981256" duration="3745000" />
-      <workItem from="1572753484077" duration="3949000" />
+      <workItem from="1572753484077" duration="28981000" />
+      <workItem from="1572829157178" duration="20000" />
+      <workItem from="1572831085206" duration="4031000" />
+      <workItem from="1572854110032" duration="319000" />
+      <workItem from="1572854808523" duration="1152000" />
+      <workItem from="1572937888662" duration="648000" />
+      <workItem from="1572938562180" duration="11063000" />
+      <workItem from="1572951755696" duration="4721000" />
+      <workItem from="1573026739808" duration="6419000" />
     </task>
     <task id="LOCAL-00001" summary="repository crud">
       <created>1572756756356</created>
@@ -160,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572756756356</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="repository search">
+      <created>1572757579493</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572757579493</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,8 +229,21 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="crud food admin" />
     <MESSAGE value="repository crud" />
-    <option name="LAST_COMMIT_MESSAGE" value="repository crud" />
+    <MESSAGE value="repository search" />
+    <option name="LAST_COMMIT_MESSAGE" value="repository search" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/database/migrations/2019_11_01_094152_create_foods_table.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
 <div id="app">
@@ -76,7 +77,7 @@
         </div>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Đat'foods</a>
+        <a class="navbar-brand" href="{{route('foods.index')}}">Đạt'foods</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -85,18 +86,55 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{route('foods.index')}}">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('foods.create')}}">@lang('message.Add dish')</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('foods.create')}}">Add dish</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('foods.create')}}"><img
-                            src="https://img.icons8.com/dusk/30/000000/clear-shopping-cart.png"></a>
+                    <a class="nav-link" href=""><img
+                            src="https://img.icons8.com/dusk/30/000000/clear-shopping-cart.png">(
+                        {{\Illuminate\Support\Facades\Session::has('cart') ? \Illuminate\Support\Facades\Session::get('cart')->totalQty :''}}
+                        )
+                    </a>
                 </li>
 
             </ul>
+
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="form-group">
+                <form action="{{route('setLang')}}" method="post">
+                    @csrf
+                    <label>
+                        <select class="form-control" onchange="this.form.submit()" name="language">
+                            <option
+                                @if(\Illuminate\Support\Facades\Session::has('language'))
+                                @if(\Illuminate\Support\Facades\Session::get('language')=='vi')
+                                selected
+                                @endif
+                                @endif
+                                value="vi"
+                            >vi
+                            </option>
+                            <option
+                                @if(\Illuminate\Support\Facades\Session::has('language'))
+                                @if(\Illuminate\Support\Facades\Session::get('language')=='en')
+                                selected
+                                @endif
+                                @endif
+                                value="en"
+                            >en
+                            </option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div>
+            <form action="{{route('foods.search')}}" method="get">
+                <input type="search" name="search" placeholder="@lang('message.What food do you want to find')">
+                <button type="submit" class="btn btn-danger">@lang('message.Search')</button>
+            </form>
         </div>
     </nav>
 

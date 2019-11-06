@@ -16,6 +16,7 @@ class FoodsTableSeeder extends Seeder
         $food->desc = 'lòng xào dưa rất ngon';
         $food->image = 'image/long-xao-dua.jpg';
         $food->price = 100000;
+        $food->customer_id = 1;
         $food->save();
 
         $food = new \App\Food();
@@ -23,6 +24,8 @@ class FoodsTableSeeder extends Seeder
         $food->desc = 'nem chua rất ngon';
         $food->image = 'image/nem-chua.jpg';
         $food->price = 150000;
+        $food->customer_id = 1;
+
         $food->save();
 
         $food = new \App\Food();
@@ -30,6 +33,8 @@ class FoodsTableSeeder extends Seeder
         $food->desc = 'bánh đa rất ngon';
         $food->image = 'image/banh-da.jpg';
         $food->price = 125000;
+        $food->customer_id = 1;
+
         $food->save();
 
         $food = new \App\Food();
@@ -37,6 +42,8 @@ class FoodsTableSeeder extends Seeder
         $food->desc = 'đậu phụ lướt ván rất ngon';
         $food->image = 'image/dau-phu.jpg';
         $food->price = 70000;
+        $food->customer_id = 1;
+
         $food->save();
 
         $food = new \App\Food();
@@ -44,6 +51,8 @@ class FoodsTableSeeder extends Seeder
         $food->desc = 'rau bầu xào tỏi ớt rất ngon';
         $food->image = 'image/rau-bau.jpg';
         $food->price = 85000;
+        $food->customer_id = 2;
+
         $food->save();
 
         $food = new \App\Food();
@@ -51,6 +60,7 @@ class FoodsTableSeeder extends Seeder
         $food->desc = 'cút lộn xào me rất ngon';
         $food->image = 'image/cut-lon.jpg';
         $food->price = 60000;
+        $food->customer_id = 3;
         $food->save();
 
 
