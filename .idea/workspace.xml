@@ -2,36 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb2054f-8887-489f-abf5-10abfa1a3527" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LangController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleConstant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoppingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Locale.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/RequestFoodValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_10_30_093710_create_customers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_06_085648_add_column_role_to_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CustomerTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/GuestTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/vi/message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Food.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Food.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FoodsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FoodsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/FoodRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/FoodRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_01_094152_create_foods_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_01_094152_create_foods_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/FoodsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/FoodsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/food/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/food/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vi/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vi/message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/food/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/food/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -193,7 +172,7 @@
       <workItem from="1572937888662" duration="648000" />
       <workItem from="1572938562180" duration="11063000" />
       <workItem from="1572951755696" duration="4721000" />
-      <workItem from="1573026739808" duration="6419000" />
+      <workItem from="1573026739808" duration="17058000" />
     </task>
     <task id="LOCAL-00001" summary="repository crud">
       <created>1572756756356</created>
@@ -209,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572757579493</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="authorization">
+      <created>1573033264145</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573033264146</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +219,8 @@
     <MESSAGE value="crud food admin" />
     <MESSAGE value="repository crud" />
     <MESSAGE value="repository search" />
-    <option name="LAST_COMMIT_MESSAGE" value="repository search" />
+    <MESSAGE value="authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="authorization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

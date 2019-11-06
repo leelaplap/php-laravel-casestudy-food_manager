@@ -86,13 +86,18 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('foods.create')}}">@lang('message.Add dish')</a>
-                </li>
+                @can('crud-user')
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('foods.create')}}">@lang('message.Add dish')</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('customers.create')}}">@lang('message.Add new Customer')</a>
+                    </li>
+                @endcan
                 <li class="nav-item">
                     <a class="nav-link" href=""><img
                             src="https://img.icons8.com/dusk/30/000000/clear-shopping-cart.png">(
-                        {{\Illuminate\Support\Facades\Session::has('cart') ? \Illuminate\Support\Facades\Session::get('cart')->totalQty :''}}
+                        {{\Illuminate\Support\Facades\Session::has('cart') ? \Illuminate\Support\Facades\Session::get('cart')->totalQty  :0}}
                         )
                     </a>
                 </li>
@@ -100,10 +105,11 @@
             </ul>
 
         </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
 
-            <div class="form-group">
-                <form action="{{route('setLang')}}" method="post">
+        <div class="collapse navbar-collapse " id="navbarNav">
+
+            <div class="form-group ">
+                <form action="{{route('setLang')}}" method="post" class="t">
                     @csrf
                     <label>
                         <select class="form-control" onchange="this.form.submit()" name="language">
@@ -130,12 +136,15 @@
                 </form>
             </div>
         </div>
+
+
         <div>
             <form action="{{route('foods.search')}}" method="get">
                 <input type="search" name="search" placeholder="@lang('message.What food do you want to find')">
                 <button type="submit" class="btn btn-danger">@lang('message.Search')</button>
             </form>
         </div>
+
     </nav>
 
 

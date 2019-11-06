@@ -22,11 +22,9 @@ class FoodsController extends Controller
 
     public function getAll()
     {
-        if (Gate::allows('crud-user')) {
             $foods = $this->foodService->getAll();
             return view('food.index', compact('foods'));
-        }
-        abort(403, "dell cos");
+
 
     }
 

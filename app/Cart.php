@@ -34,12 +34,10 @@ class Cart
             } else {
                 $this->totalQty++;
             }
-
-            $storeItem['totalQty']++;
-            $storeItem['totalPrice'] = $storeItem['totalQty'] * $food->id;
-            $this->items[$food->id] =$storeItem;
-            $this->totalPrice += $storeItem['totalPrice'];
-
         }
+        $storeItem['totalQty']++;
+        $storeItem['totalPrice'] = $storeItem['totalQty'] * $food->price;
+        $this->items[$food->id] =$storeItem;
+        $this->totalPrice += $storeItem['totalPrice'];
     }
 }

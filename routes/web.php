@@ -12,6 +12,9 @@
 */
 
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -21,8 +24,6 @@ Route::middleware('locale')->group(function () {
         return view('welcome');
     });
     Route::prefix('foods')->group(function () {
-
-        Route::get('phanquyen', 'FoodsController@check');
         Route::get('/', 'FoodsController@getAll')->name('foods.index');
         Route::get('create', 'FoodsController@create')->name('foods.create');
         Route::post('store', 'FoodsController@store')->name('foods.store');
@@ -30,7 +31,7 @@ Route::middleware('locale')->group(function () {
         Route::post('{id}/update', 'FoodsController@update')->name('foods.update');
         Route::get('{id}/destroy', 'FoodsController@destroy')->name('foods.destroy');
         Route::get('search', 'FoodsController@search')->name('foods.search');
-        Route::get('/add-to-cart/{id}', 'ShoppingController@addToCart')->name('addToCart');
+        Route::get('/add-to-cart/{id}', 'ShoppingController@addToCart')->name('addToCart')->middleware('auth');
 
     });
 
@@ -42,7 +43,6 @@ Route::middleware('locale')->group(function () {
         Route::post('{id}/update', 'CustomerController@update')->name('customers.update');
         Route::get('{id}/destroy', 'CustomerController@destroy')->name('customers.destroy');
         Route::get('search', 'CustomerController@search')->name('customers.search');
-        Route::get('/add-to-cart/{id}', 'ShoppingController@addToCart')->name('addToCart');
 
     });
 

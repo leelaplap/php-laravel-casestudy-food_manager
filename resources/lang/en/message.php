@@ -13,6 +13,12 @@ return [
     "Register" => "Register",
     "Logout" => "Logout",
     "What food do you want to find" => "What food do you want to find",
+    "Detail" => "Detail",
+    "Name you need" => "Name you need",
+    "Customer name"=>"Customer name",
+    "Phone"=>"Phone",
+    "Address"=>"Address",
+    "Add new Customer"=>"Add new Customer",
 
 
 ];

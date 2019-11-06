@@ -4,14 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Customer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class CustomerController extends Controller
 {
 
     public function getAll()
     {
+        if (Gate::allows('crud-user')){
         $customers = Customer::all();
         return view('customer.index', compact('customers'));
+        }
+        abort(403,"You do not have access to this site !!!");
     }
 
 

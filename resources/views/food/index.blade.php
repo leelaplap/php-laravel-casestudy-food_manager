@@ -22,8 +22,15 @@
                         <p class="card-text">{{$food->desc}}</p>
                         <p class="card-text">{{$food->price}} VNĐ</p>
                         <p class="card-text">Người đã mua:{{$food->customer->name}}</p>
-                        <a href="{{route('foods.destroy',$food->id)}}" class="btn btn-primary">@lang('message.Delete')</a>
-                        <a href="{{route('foods.edit',$food->id)}}" class="btn btn-primary">@lang('message.Edit')</a>
+                        @can('crud-user')
+                            <a href="{{route('foods.destroy',$food->id)}}" class="btn btn-primary">
+                                @lang('message.Delete')
+                            </a>
+                        @endcan
+                        @can('crud-user')
+                            <a href="{{route('foods.edit',$food->id)}}"
+                               class="btn btn-primary">@lang('message.Edit')</a>
+                        @endcan
                         <a href="{{route('addToCart',$food->id)}}" class="btn btn-primary">@lang('message.Order')</a>
                     </div>
                 </div>
